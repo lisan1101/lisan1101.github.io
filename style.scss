@@ -1,0 +1,321 @@
+@charset "utf-8";
+/* CSS Document */
+
+// ===========================
+// ページャー
+// ------------------------------
+
+.pager {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  padding: 0;
+  margin-left: 50px;
+  li {
+    display: block;
+    margin: 20px;
+    a {
+      display: block;
+      width: 20px;
+      height: 20px;
+      background: gray;
+      border-radius: 50%;
+      margin:  0 auto;   
+    }
+  }
+  .is-current {
+    a {
+      
+      background-image: url(img/sakura_30.png);   
+      background-color: white;
+      background-repeat:  no-repeat;                /* 画像の繰り返しを指定  */              
+      width:32px;                                   /* 横幅のサイズを指定    */
+      height:32px;      
+      background-position: center;                              /* 縦幅のサイズを指定    */
+      margin:  0 auto;   
+    }
+  }
+}
+
+.section {
+  width: 100%;
+  
+}
+.section-content {
+  max-width: 60%;
+  margin: 0 auto;
+  padding: 75px 0px;
+  text-align: center;
+}
+
+
+body{
+  font: 15px/1.6 "Tamil Sangam MN","Hiragino Kaku Gothic Pro",Osaka,"メイリオ","ＭＳ Ｐゴシック","MS PGothic",Verdana,Arial,sans-serif;
+  margin:0;
+  color:#313131;
+  display: block;
+
+  h2{
+    font-size: 200%;
+  }
+}
+
+
+
+img{
+outline:none;
+border-style:none;
+}
+
+
+
+// ===========================
+//　ナビゲーション
+// ------------------------------
+
+  #header_nav{
+      width: 100%;
+      border-top: 1px solid gray;
+      border-bottom: 1px solid gray;
+      margin-bottom: 5px;
+      overflow: hidden;
+    
+      ul{
+          margin-top:0;
+          width: 60%;
+          margin-left: 20%;
+          list-style: none;
+      }
+      li{
+          width: calc(25% - 2px);
+          font-size: 110%;
+          letter-spacing: 5px;
+          font-weight: 400;
+          line-height: 45px;
+          border-left: 1px solid gray;
+          color: #313131;
+          cursor: pointer;
+          text-align: center;
+          float: left;
+
+          :last-child{
+              border-right: 1px solid gray;
+          }
+
+          a{
+              display: block; /*1つのli全体にリンクを有効にする*/
+              color:black;
+              text-decoration: none;
+
+              &:hover{
+                  background-color: pink;
+                  color: white;
+                  
+              }
+          
+          }
+
+        }
+    }
+
+  #switch-portfolio{
+    width: 100%;
+    margin-bottom: 0px;
+    
+    nav{
+      display:inline-block;
+      width:100%;
+      
+    }
+  
+    ul{
+        margin-top:0;
+        width: 100%;
+
+        list-style-type: none;
+    }
+    li{
+        width: calc(30% - 2px);
+        letter-spacing: 5px;
+        font-weight: 400;
+        line-height: 30px;
+        cursor: pointer;
+        //text-align: center;
+        //float: left;
+
+        
+      }
+    .flex{
+      display: flex;
+      justify-content: center;
+      
+      #notinitial_page{
+        text-decoration: none;
+        color:black;
+      }
+
+      #initial_page{
+        
+        text-decoration: underline;
+        color:black;
+      }
+    }
+  }
+
+  #portfolio_cite{
+    margin-top:30px;
+  }
+
+
+// ===========================
+// セクション
+// ------------------------------
+
+.section{
+  
+  text-align: center;
+  padding-top: 100px;
+
+  ul{
+    display: block;
+    list-style: none;
+    text-align: center;
+    padding:0 0 0 0;
+  }
+
+}
+
+
+.main{
+  z-index:10;
+  display: block;
+  position:relative;
+  
+}
+
+#section_top,#section_about{
+  padding-top: 250px;
+
+  img{
+    animation: flash 1.5s linear infinite;
+  }
+
+  h2{
+    margin: 0 auto;
+  }
+
+#section_portofolio{
+  padding-top: 150px;
+  h2{
+    margin: 0 auto;
+  }
+
+}
+
+
+}
+#scroll_message{
+  animation: flash 1.5s linear infinite;
+  margin-top: 50px;
+}
+
+
+// ===========================
+// ヘッダー
+// ------------------------------
+
+header{
+  
+  display: block;
+  width:60%;
+  margin-left: 20%;
+  overflow: hidden;
+  
+  p{
+      font-size:100%;
+      color:#313131;
+      
+  }
+
+  h1{
+  font-size:120%;
+  color:#313131;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border:1px solid #313131;
+  border-radius: 5px;
+  letter-spacing: 3px;
+  font-weight:400;
+  float: left;
+  }
+}
+
+#header1{
+z-index: 30;
+background-color: white;
+width:100%;
+position: fixed;
+}
+
+// ===========================
+// 画像点滅用
+// ------------------------------
+
+@keyframes flash {
+  0%,100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
+
+
+
+// ===========================
+//横スクロールリスト用
+// ------------------------------
+.horizontal-list {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+#section_portofolio{
+  
+  .portfolio_section {
+    padding-top: 0px;
+    margin-top: 50px;
+    max-width: 100%;
+    display: inline-block;
+    .img_and_title{
+
+      display: block;
+      max-width: 60%;
+
+      img{
+        max-width: 100%;
+        height: auto;
+        width:auto;
+      }
+      #switch-portfolio{
+
+        ul{
+          list-style: none;
+        }
+
+      }
+    }
+  }
+
+  
+    height: 400px;
+    padding:100px auto;
+  
+  }

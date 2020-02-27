@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="./jquery-3.4.1.min.js"></script>
+    <script src="./Scrollify/jquery.scrollify.js"></script>
+    <script src="./document.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+
+</head>
+
+<body>
+    <!--header-->
+    <div id="header1">
+    <header>
+        <h1>-TAKAHASHI LISA-</h1>
+    </header>
+    
+    <nav id=header_nav>
+      <ul>
+        <li><a href="#section1">TOP</a></li>
+        <li><a href="#section2">ABOUT</a></li>
+        <li><a href="#section3">PORTFOLIO</a></li>
+        <li><a href="#section4">SKILLS</a></li>
+      </ul>
+    </nav>
+    </div>
+
+
+    <div class="main">
+    
+    <section id="section_top" class="section section-blue js-section" data-section-name="section1">
+        <div class="section-content">
+
+            <h2>LISA TAKAHASHI</h2>
+            <p>Portfolio Site</p>
+
+            <p class="blinking" id=scroll_message>scroll for more!!</p>
+            <img class="blinking" src="./img/scroll_message.png" width="50" height="50" alt="scroll for more" title="scroll for more">
+        </div>
+    </section>
+    <section id="section_about" class="section section-blue js-section" data-section-name="section2">
+        <div class="section-content">
+            <h2>ABOUT</h2>
+            <ul class="my-profile">
+                <li class="profile-list-item">高橋リサ　Takahashi Lisa</li>
+                <li class="profile-list-item">1996年11月1日生まれ</li>
+                <li class="profile-list-item">東京農工大学院工学府情報工学専攻在学中</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="section_portofolio" class="section section-blue js-section" data-section-name="section3">
+        <div class="section-content">
+            <h2>PORTFOLIO</h2>
+
+                <div id="switch-portfolio">
+                    <nav>
+                        <ul class="flex">
+                            <li ><a  id="initial_page" class="click_portfolio" href="#portfolio1">HP</a></li>
+                            <li ><a id="notinitial_page" class="click_portfolio" href="#portfolio2">卒業研究</a></li>
+                            <li ><a id="notinitial_page" class="click_portfolio" href="#portfolio3">修士研究</a></li>
+                           
+                        </ul>
+                    </nav>
+                </div>
+                
+                <div class="portfolio_section" id="portfolio1">
+                    <div class="img_and_title">
+                        <p>本ポートフォリオサイト</p>
+                        <img src="./img/site_img.png" alt="サイト画像">
+                    </div>
+                </div>
+                 
+                <div class="portfolio_section" id="portfolio2">
+                    <div class="img_and_title">
+                        <p>卒業研究</p>
+                        
+                    </div>
+                </div>
+
+                <div class="portfolio_section" id="portfolio3">
+                    <div class="img_and_title">
+                        <p>修士研究</p>
+                        
+                    </div>
+                </div>
+
+       
+        </div>
+    </section>
+
+    <section id="section_skills" class="section section-blue js-section" data-section-name="section4">
+        <div class="section-content">
+            <h2>SKILLS</h2>
+            <p>工事中</p>
+        </div>
+    </section>
+
+    <ul class="pager" id="js-pager"></ul>
+    </div>
+</body>
+
+</html>
