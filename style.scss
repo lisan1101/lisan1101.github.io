@@ -44,7 +44,6 @@
 }
 .section-content {
   max-width: 70%;
-  height:600px;
   margin: 0 auto;
   padding: 75px 0px;
   text-align: center;
@@ -292,7 +291,7 @@ position: fixed;
   
   .portfolio_section {
     padding-top: 0px;
-    margin-top: 50px;
+    margin-top: 30px;
     max-width: 100%;
     display: inline-block;
     .img_and_title{
@@ -301,8 +300,41 @@ position: fixed;
       max-width: 100%;
       
       
-      img{
+      .paper_pdf1{
+        
+        display:block;
         max-width: 100%;
+        width:auto;
+
+        iframe{
+          height:400px;
+ 
+        }
+      }
+
+      .paper_pdf2{
+        
+        display:inline;
+        max-width: 100%;
+        $width:width;
+        width:auto;
+
+        iframe{
+          height:400px;
+          float:left;
+        }
+
+        img{
+          max-width: 60%;
+          height:400px;
+          float:left;
+        }
+
+      }
+
+
+      img{
+        max-width: 60%;
         height: auto;
         width:auto;
       }
@@ -322,8 +354,3 @@ position: fixed;
   
   }
 
-  iframe{
-
-    width: 300px;
-    height: 200px;
-  }
