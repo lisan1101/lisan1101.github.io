@@ -43,7 +43,8 @@
   
 }
 .section-content {
-  max-width: 60%;
+  max-width: 70%;
+  height:600px;
   margin: 0 auto;
   padding: 75px 0px;
   text-align: center;
@@ -297,8 +298,9 @@ position: fixed;
     .img_and_title{
 
       display: block;
-      max-width: 60%;
-
+      max-width: 100%;
+      
+      
       img{
         max-width: 100%;
         height: auto;
@@ -315,7 +317,13 @@ position: fixed;
   }
 
   
-    height: 400px;
+    height: 600px;
     padding:100px auto;
   
+  }
+
+  iframe{
+
+    width: 300px;
+    height: 200px;
   }
